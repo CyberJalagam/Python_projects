@@ -1,5 +1,5 @@
 
-#!/bin/bash
+# python
 #
 # This script is personal
 # Make sure to make necessary changes
@@ -21,14 +21,6 @@
 # limitations under the License.
 #
 
-first = float(input("First number: "))
-second = float(input("Second number: "))
-add = first + second
-sub = first - second
-div = first / second
-rem = first % second
-power = first ** second
-divr = first // second
 print("===========================================================")
 print("Available operations:                                     =")
 print("===========================================================")
@@ -37,6 +29,15 @@ print("=   - (Subtract)                                          =")
 print("=   / (Divide)                                            =")
 print("=   ** (Power - Second number)                            =")
 print("===========================================================")
+
+first = float(input("First number: "))
+second = float(input("Second number: "))
+add = first + second
+sub = first - second
+div = first / second
+rem = first % second
+power = first ** second
+divr = first // second
 operator = (input("Enter the operator: ")) 
 
 if operator == "+":

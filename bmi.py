@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python
 #
 # Copyright (C) 2020-2021 RB INTERNATIONAL NETWORK
@@ -20,30 +19,10 @@
 
 print("<<<<< © RB INTERNATIONAL NETWORK™ >>>>>")
 
-weight = float(input("Weight: "))
-korl = input("(K)g or (L)bs: ")
+weight = float(input("Weight(kg): "))
+height = float(input("Height(m): "))
 
-if korl == "l":
-    final = weight * 0.45
-    key = "Your weight in lbs is: "
-elif korl == "L":
-    final = weight * 0.45
-    key = "Your weight in Lbs is:  "
-elif korl == "k":
-    final = weight / 0.45
-    key = "Your weight in Kg is:  "
-elif korl == "K":
-    final = weight / 0.45
-    key = "Your weight in kg is:  "
-else:
-    final = "Input not recogonized, please enter a valid input"
-    key = "Error: "
-
-print(key + str(final))    
+final = weight / height ** 2
+print("Your BMI is: " + str(final))
 
 print("<<<<< © RB INTERNATIONAL NETWORK™ >>>>>")
-
-
-
-
-    

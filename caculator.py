@@ -1,10 +1,6 @@
-
-# python
+#!/usr/bin/env python
 #
-# This script is personal
-# Make sure to make necessary changes
-# 
-# Copyright (C) 2020 RB INTERNATIONAL NETWORK
+# Copyright (C) 2020-2021 RB INTERNATIONAL NETWORK
 #
 #            An Open Source Project
 #
@@ -20,6 +16,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
+print("<<<<< © RB INTERNATIONAL NETWORK™ >>>>>")
 
 print("===========================================================")
 print("Available operations:                                     =")
@@ -60,6 +58,8 @@ elif operator == "**":
 
 else:
     final = "Invalid operator"
-    key = "Error"
+    key = "Error: "
 
 print(key + str(final))
+
+print("<<<<< © RB INTERNATIONAL NETWORK™ >>>>>")

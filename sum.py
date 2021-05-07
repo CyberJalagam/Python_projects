@@ -1,10 +1,7 @@
 
-# python
+#!/usr/bin/env python
 #
-# This script is personal
-# Make sure to make necessary changes
-# 
-# Copyright (C) 2020 RB INTERNATIONAL NETWORK
+# Copyright (C) 2020-2021 RB INTERNATIONAL NETWORK
 #
 #            An Open Source Project
 #
@@ -21,8 +18,12 @@
 # limitations under the License.
 #
 
+print("<<<<< © RB INTERNATIONAL NETWORK™ >>>>>")
+
 first = input("First number: ")
 second = input("Second number: ")
 
 sum = float(first) + float(second)
 print("Sum: " + str(sum))
+
+print("<<<<< © RB INTERNATIONAL NETWORK™ >>>>>")

@@ -20,13 +20,15 @@
 print("<<<<< © RB INTERNATIONAL NETWORK™ >>>>>")
 
 print("===========================================================")
-print("Available operations:                                     =")
+print("Operator numbers:                                         =")
 print("===========================================================")
-print("=   + (Add)                                               =")
-print("=   - (Subtract)                                          =")
-print("=   / (Divide)                                            =")
-print("=   ** (Power - Second number)                            =")
+print("=  1.     + (Add)                                         =")
+print("=  2.     - (Subtract)                                    =")
+print("=  3.     / (Divide)                                      =")
+print("=  4.     ** (Power), (first_number^second_number)        =")
 print("===========================================================")
+
+operator = (input("Enter the operator number: ")) 
 
 first = float(input("First number: "))
 second = float(input("Second number: "))
@@ -36,23 +38,24 @@ div = first / second
 rem = first % second
 power = first ** second
 divr = first // second
-operator = (input("Enter the operator: ")) 
 
-if operator == "+":
+if operator == "1":
     final = add
     key = "Addition: "
 
-elif operator == "-":
+elif operator == "2":
     final = sub
     key = "Subtraction: "
 
-elif operator == "/":
+elif operator == "3":
     final_quo = div
     final_rem = rem
     print("Quotient: " + str(final_quo))
     print("Remainder:" + str(final_rem))
+    print("<<<<< © RB INTERNATIONAL NETWORK™ >>>>>")
+    quit()
 
-elif operator == "**":
+elif operator == "4":
     final = power
     key = "Power: "
 

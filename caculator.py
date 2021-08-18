@@ -26,6 +26,7 @@ print("=  1.     + (Add)                                         =")
 print("=  2.     - (Subtract)                                    =")
 print("=  3.     / (Divide)                                      =")
 print("=  4.     ** (Power), (first_number^second_number)        =")
+print("=  5.     * (Multiply)                                    =")
 print("===========================================================")
 
 operator = (input("Enter the operator number: ")) 
@@ -38,6 +39,7 @@ div = first / second
 rem = first % second
 power = first ** second
 divr = first // second
+mul = first * second
 
 if operator == "1":
     final = add
@@ -51,7 +53,7 @@ elif operator == "3":
     final_quo = div
     final_rem = rem
     print("Quotient: " + str(final_quo))
-    print("Remainder:" + str(final_rem))
+    print("Remainder: " + str(final_rem))
     print("<<<<< © RB INTERNATIONAL NETWORK™ >>>>>")
     quit()
 
@@ -59,6 +61,10 @@ elif operator == "4":
     final = power
     key = "Power: "
 
+elif operator == "5":
+    final = mul
+    key = "Multiplication: "
+    
 else:
     final = "Invalid operator"
     key = "Error: "
